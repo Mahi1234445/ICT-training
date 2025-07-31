@@ -1,0 +1,12 @@
+def open_file(filename):
+    try:
+        with open(filename, 'r') as file:
+            contents = file.read()
+            print("File contents:")
+            print(contents)
+    except PermissionError:
+        print("Error: Permission denied to open the file.")
+
+
+file_name = input("Input a file name: ")
+open_file(file_name)
