@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHOLE CHATURE</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff8f0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #d35400;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .buttons {
+            margin-top: 40px;
+        }
+
+        .buttons a button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            margin: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons a button:hover {
+            background-color: #ba611b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Bhole Chature</h1>
+        <p>Authentic Taste of Chole Bhature</p>
+    </header>
+
+    <div class="buttons">
+        <a href="{% url 'about' %}"><button>About Us</button></a>
+        <a href="{% url 'contact' %}"><button>Contact</button></a>
+    </div>
+
+</body>
+</html>
