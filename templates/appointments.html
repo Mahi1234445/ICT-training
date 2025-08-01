@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Appointments</title>
+</head>
+<body>
+    <h1>Thank you! Your appointment has been booked.</h1>
+    <h2>All Appointments:</h2>
+
+    {% if appointments %}
+        <ul>
+            {% for a in appointments %}
+                <li><strong>{{ a.name }}</strong> ({{ a.mobile }}) - {{ a.date }} at {{ a.time }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No appointments booked yet.</p>
+    {% endif %}
+
+    <a href="/">Book Another Appointment</a>
+</body>
+</html>
